@@ -2,6 +2,17 @@
   "expo": {
     "name": "vms",
     "slug": "vms",
-    "version": "1.0.0"
+    "scheme": "vms",
+    "version": "1.0.0",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
