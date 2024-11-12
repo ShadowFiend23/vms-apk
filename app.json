@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "vms",
+    "slug": "vms",
+    "scheme": "vms",
+    "version": "1.0.0",
+    "icon": "./app/assets/icon.png",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8e2df1cb-85c0-40bf-8df4-9ec81fdd8a38"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/8e2df1cb-85c0-40bf-8df4-9ec81fdd8a38"
+    },
+    "android": {
+      "package": "com.mtech.vms",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/icon.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "ios": {}
+  }
+}

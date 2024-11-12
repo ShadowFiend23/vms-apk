@@ -1,0 +1,37 @@
+{
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "channel": "preview",
+      "env": {
+        "EXPO_PUBLIC_API": "https://fjm1fx4ngk.sharedwithexpose.com",
+        "EXPO_PUBLIC_USER": "webmaster",
+        "EXPO_PUBLIC_PASS": "1234"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "channel": "preview2"
+    },
+    "preview3": {
+      "developmentClient": true,
+      "channel": "preview3"
+    },
+    "preview4": {
+      "distribution": "internal",
+      "channel": "preview4"
+    },
+    "production": {
+      "channel": "production",
+      "env": {
+        "EXPO_PUBLIC_API": "https://fjm1fx4ngk.sharedwithexpose.com",
+        "EXPO_PUBLIC_USER": "webmaster",
+        "EXPO_PUBLIC_PASS": "1234"
+      }
+    }
+  }
+}
